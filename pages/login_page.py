@@ -16,5 +16,5 @@ class LoginPage(BasePage):
             *LoginPageLocators.LOGIN_FORM), "Login form is not presented"
 
     def should_be_register_form(self):
-        assert elf.is_element_present(
+        assert self.is_element_present(
             *LoginPageLocators.REG_FORM), "Register form is not presented"
